@@ -332,10 +332,9 @@
                 <h1 class="fashion_taital">Our Services</h1>
                 <center>
                     <div id="sec">
-                        <a href="retails.php"><button class="btn btn-primary" onclick="retails()">Retail Sales</button></a>
-                        <a href="enterprise.php"><button class="btn btn-secondary" onclick="enterprise()">Enterprise Services</button></a>
+                        <button class="btn btn-primary" onclick="retails()">Retail Sales</button>
+                        <button class="btn btn-secondary" onclick="enterprise()">Enterprise Services</button>
                     </div><br>
-
                     <div id="retail-services">
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category 
@@ -794,12 +793,14 @@
         let enterpriseservice = document.getElementById("enterprise-service");
 
         function enterprise() {
-            retailservice.style.display = "none";
+            console.log("Enterprise")
+            retailservice.style.display = "none !important";
             enterpriseservice.style.display = "block";
 
         }
 
         function retails() {
+            console.log("Retails")
             retailservice.style.display = "block";
             enterpriseservice.style.display = "none";
         }
