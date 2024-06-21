@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Bossman Technologies</title>
+    <title>Bossmann Technologies</title>
     <meta name="keywords" content="Bossmann, Bossmann technologies, Bossmann ltd, Bossmann technologies ltd, bossmann tech, laptops, brand new computer, computer accessories, compter shop, software installation, website development, software development, hp laptops and computers, hp laptops, hp compter, hp products, quality hp laptops, affordable laptops, buy laptops, buy computer, one-stop computer shop, computer shop in abuja, cheap laptops in abuja, quaility laptops in abuja, computer sales, laptop sales, laptop shop in abuja, computer shop in abuja, software firm in abuja, software company, software company in abuja, computer market place, affordable computer store in abuja, laptop and computer accessories">
     <meta name="description" content="Bossmann Technologies Ltd is a one-stop computers shop in Abuja; your premier destination for cutting-edge computing solutions. From high-performance desktops to sleek laptops, we offer a wide range of top-quality devices to suit every need. Elevate your productivity with our premium accessories and unlock new possibilities with our expert software services. At Bossmann, we're dedicated to providing innovative solutions that empower you to thrive in the digital age. Experience excellence in technology – choose Bossmann Technologies Ltd.">
     <meta name="author" content="Godwin Ikpe Ugbe">
@@ -30,12 +30,22 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--  -->
     <!-- owl stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesoeet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!-- Libraries Stylesheet -->
+    <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+    <!-- Customized Bootstrap Stylesheet -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Template Stylesheet -->
+    <link href="css/style1.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -48,11 +58,11 @@
                     <div class="col-sm-12">
                         <div class="custom_menu">
                             <ul>
-                                <li><a href="#">Quaility Products</a></li>
-                                <li><a href="#">Computer Accessories</a></li>
-                                <li><a href="#">Software Services</a></li>
-                                <li><a href="#">Today's Deals</a></li>
-                                <li><a href="#">Customer Service</a></li>
+                                <li><a href="retails.php">Quaility Products</a></li>
+                                <li><a href="retails.php">Computer Accessories</a></li>
+                                <li><a href="retails.php">Software Services</a></li>
+                                <li><a href="retails.php">Today's Deals</a></li>
+                                <li><a href="retails.php">Customer Service</a></li>
                             </ul>
                         </div>
                     </div>
@@ -70,10 +80,10 @@
                             <div id="mySidenav" class="sidenav">
                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                 <a href="index.html">Home</a>
-                                <a href="fashion.html">Laptops</a>
-                                <a href="electronic.html">Computer Accessories</a>
-                                <a href="jewellery.html">Software Services</a>
-                                <a href="#">Contact Us</a>
+                                <a href="retails.php#sales">Laptops</a>
+                                <a href="retails.php#sales">Computer Accessories</a>
+                                <a href="enterprise.php#enterprise">Software Services</a>
+                                <a href="#contact-us">Contact Us</a>
                             </div>
                             <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
                         </div>
@@ -89,7 +99,6 @@
                     </div>
                 </div>
                 <!-- logo section end -->
-
             </div>
         </div>
         <!-- header section start -->
@@ -322,32 +331,36 @@
             <div class="carousel-inner">
                 <h1 class="fashion_taital">Our Services</h1>
                 <center>
-                    <div>
-
-                        <button class="btn btn-primary">Retail Sales</button> <button class="btn btn-secondary">Enterprise Services</button>
+                    <div id="sec">
+                        <a href="retails.php"><button class="btn btn-primary">Retail Sales</button></a>
+                        <a href="enterprise.php"><button class="btn btn-secondary">Enterprise Services</button></a>
                     </div><br>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category 
-                     </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Laptops</a>
-                            <a class="dropdown-item" href="#">Keyboard/Mouse</a>
-                            <a class="dropdown-item" href="#">Storage Devices</a>
+
+                    <div id="retail-services">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category 
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Laptops</a>
+                                <a class="dropdown-item" href="#">Keyboard/Mouse</a>
+                                <a class="dropdown-item" href="#">Storage Devices</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="main">
-                        <!-- Another variation with a button -->
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Looking for product to buy?">
-                            <div class="input-group-append">
-                                <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
+                        <div class="main">
+                            <!-- Another variation with a button -->
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Looking for product to buy?">
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522">
                            <i class="fa fa-search"></i>
                            </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </center>
-                <div class="carousel-item active">
+                <!-- Retail services section start -->
+                <div class="carousel-item active" id="retail-services">
                     <div class="container">
                         <!-- <h1 class="fashion_taital">Electronic</h1> -->
                         <div class="fashion_section_2">
@@ -389,7 +402,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" id="retail-services">
                     <div class="container">
                         <!-- <h1 class="fashion_taital">Electronic</h1> -->
                         <div class="fashion_section_2">
@@ -431,7 +444,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" id="retail-services">
                     <div class="container">
                         <!-- <h1 class="fashion_taital">Electronic</h1> -->
                         <div class="fashion_section_2">
@@ -473,6 +486,87 @@
                         </div>
                     </div>
                 </div>
+                <!-- Retails service section end -->
+                <!-- Enterprise services section start -->
+                <!-- Services Start -->
+                <div class="container-fluid pt-6 px-5" style="color:white">
+                    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                        <h1 class="display-5 mb-0">What We Offer</h1>
+                        <hr class="w-25 mx-auto bg-primary">
+                    </div>
+                    <div class="row g-5">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item bg-secondary text-center px-5">
+                                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                    <i class="fa fa-code fa-2x"></i>
+                                </div>
+                                <h3 class="mb-3">Web Development</h3>
+                                <p class="mb-0">Ransform your ideas into stunning websites with our expert web development service. From responsive designs to robust functionalities, we craft tailored solutions that elevate your online presence. Contact us to bring your
+                                    vision to life!</p>
+                                <button class="btn btn-primary px-5 py-3"><a href="#contact-us" class="text-white rounded-circle">Contact Us</a></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item bg-secondary text-center px-5">
+                                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                    <i class="fa fa-mobile fa-2x"></i>
+                                </div>
+                                <h3 class="mb-3">Mobile Apps Development</h3>
+                                <p class="mb-0">Crafting innovative mobile apps that captivate users. Our expert team delivers sleek designs and seamless functionality tailored to your vision. Elevate your business with our cutting-edge mobile app development service
+                                    today!
+                                </p>
+                                <button class="btn btn-primary px-5 py-3"><a href="#contact-us" class="text-white rounded-circle">Contact Us</a></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item bg-secondary text-center px-5">
+                                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                    <i class="fa fa-laptop fa-2x"></i>
+                                </div>
+                                <h3 class="mb-3">Software(s) Installation</h3>
+                                <p class="mb-0">Ensure smooth software installations with our reliable service. From setup to configuration, we handle it all efficiently. Trust our expertise for hassle-free software installation solutions tailored to your needs.</p>
+                                <button class="btn btn-primary px-5 py-3"><a href="#contact-us" class="text-white rounded-circle">Contact Us</a></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item bg-secondary text-center px-5" style="padding-top:10px;">
+                                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                    <i class="fa fa-mobile fa-2x"></i>
+                                </div>
+                                <h3 class="mb-3">Cyber Security</h3>
+                                <p class="mb-0">Protect your business with our comprehensive cybersecurity service. We offer robust solutions including threat detection, prevention, and secure infrastructure. Safeguard your data and operations with our expert cybersecurity
+                                    team.
+                                </p>
+                                <button class="btn btn-primary px-5 py-3"><a href="#contact-us" class="text-white rounded-circle">Contact Us</a></button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item bg-secondary text-center px-5">
+                                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                    <i class="fa fa-database fa-2x"></i>
+                                </div>
+                                <h3 class="mb-3">Database Managemnet</h3>
+                                <p class="mb-0">Efficiently manage your data with our comprehensive database management service. From setup to optimization, we ensure secure storage, seamless integration, and reliable performance, empowering your business with robust
+                                    data solutions.</p>
+                                <button class="btn btn-primary px-5 py-3"><a href="#contact-us" class="text-white rounded-circle">Contact Us</a></button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item bg-secondary text-center px-5">
+                                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                                    <i class="fa fa-briefcase fa-2x"></i>
+                                </div>
+                                <h3 class="mb-3">Tools Buying</h3>
+                                <p class="mb-0">Equip your organization with state-of-the-art cybersecurity tools through our Tools Selling service. We offer a curated selection of cutting-edge software and hardware solutions to enhance your security posture. From threat
+                                    intelligence platforms to intrusion prevention systems, our team provides expert guidance to help you choose the right tools tailored to your specific needs. Our goal is to empower your organization with the latest
+                                    technologies to stay ahead of emerging cyber threats.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Services End -->
+                <!-- Enterprise services section end -->
             </div>
             <a class="carousel-control-prev" href="#electronic_main_slider" role="button" data-slide="prev">
                 <i class="fa fa-angle-left"></i>
@@ -629,7 +723,7 @@
     <!-- footer section start -->
     <div class="footer_section layout_padding">
         <div class="container">
-            <div class="footer_logo">
+            <div class="footer_logo" id="contact-us">
                 <h4 class="text-white banner_taital">Talk To Sales</h4>
                 <h4 class="text-white">Our experts love to answer questions</h4>
                 <!-- <a href="index.html" class="text-white"><img src="images/footer-logo.pn" alt="Bossmann Technologies"></a> -->
@@ -681,7 +775,6 @@
             </h6>
             <!-- Google map embeded code -->
             <center>
-
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15761.051304744273!2d7.5044203!3d9.0397728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b6dd47a9c69%3A0x7f106cf4d068802d!2sBossmann%20Technologies%20Ltd.!5e0!3m2!1sen!2sng!4v1718371826083!5m2!1sen!2sng"
                     width="80%" height="450" style="border:0;" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </center>

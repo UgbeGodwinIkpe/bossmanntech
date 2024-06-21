@@ -261,6 +261,10 @@ button {
     animation: banner 4s infinite alternate ease-in;
 }
 
+#sec a {
+    text-decoration: none !important;
+}
+
 
 /* .banner_bg_main::before {
     background-color: rgba(0, 0, 0, 0.37);
