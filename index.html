@@ -332,8 +332,8 @@
                 <h1 class="fashion_taital">Our Services</h1>
                 <center>
                     <div id="sec">
-                        <a href="retails.php"><button class="btn btn-primary">Retail Sales</button></a>
-                        <a href="enterprise.php"><button class="btn btn-secondary">Enterprise Services</button></a>
+                        <a href="retails.php"><button class="btn btn-primary" onclick="retails()">Retail Sales</button></a>
+                        <a href="enterprise.php"><button class="btn btn-secondary" onclick="enterprise()">Enterprise Services</button></a>
                     </div><br>
 
                     <div id="retail-services">
@@ -489,7 +489,7 @@
                 <!-- Retails service section end -->
                 <!-- Enterprise services section start -->
                 <!-- Services Start -->
-                <div class="container-fluid pt-6 px-5" style="color:white">
+                <div class="container-fluid pt-6 px-5" style="color:white" id="enterprise-service">
                     <div class="text-center mx-auto mb-5" style="max-width: 600px;">
                         <h1 class="display-5 mb-0">What We Offer</h1>
                         <hr class="w-25 mx-auto bg-primary">
@@ -789,6 +789,21 @@
 
     <!-- copyright section end -->
     <!-- Javascript files-->
+    <script>
+        let retailservice = document.getElementById("retail-services");
+        let enterpriseservice = document.getElementById("enterprise-service");
+
+        function enterprise() {
+            retailservice.style.display = "none";
+            enterpriseservice.style.display = "block";
+
+        }
+
+        function retails() {
+            retailservice.style.display = "block";
+            enterpriseservice.style.display = "none";
+        }
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

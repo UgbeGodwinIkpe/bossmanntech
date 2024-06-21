@@ -1015,5 +1015,9 @@ input.mail_bt::placeholder {
     margin-top: 90px;
 }
 
+#enterprise-service {
+    display: none;
+}
+
 
 /* copyright section end */
