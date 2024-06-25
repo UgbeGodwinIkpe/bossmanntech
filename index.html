@@ -721,26 +721,29 @@
     <!-- copyright section start -->
     <div class="copyright_section ">
         <div class="container ">
-            <p class="copyright_text ">© <span id="year ">Year</span> All Rights Reserved. <a href="https://wa.me/2348127087575 ">Bossmann Technologies Ltd</a></p>
+            <p class="copyright_text ">© <span id="year">Year</span> All Rights Reserved. <a href="https://wa.me/2348127087575 ">Bossmann Technologies Ltd</a></p>
         </div>
     </div>
 
     <!-- copyright section end -->
     <!-- Javascript files-->
     <script>
-        let retailservice = document.getElementById("retail-services ");
-        let enterpriseservice = document.getElementById("enterprise-service ");
-        let entbnt = document.getElementById("entbtn ");
-        let retailbnt = document.getElementById("retailbtn ");
+        let retailservice = document.getElementById("retail-services");
+        let enterpriseservice = document.getElementById("enterprise-service");
+        let entbnt = document.getElementById("entbtn");
+        let retailbnt = document.getElementById("retailbtn");
+        let cyear = document.getElementById("year");
+        let d = new Date().getFullYear();
+        cyear.innerHTML = d;
 
         function enterprise() {
             console.log("Enterprise ")
-            retailservice.style.display = "none !important ";
-            enterpriseservice.style.display = "block ";
-            retailbtn.style.display = "none ";
+            retailservice.style.display = "none !important";
+            enterpriseservice.style.display = "block";
+            retailbtn.style.display = "none";
             entbnt.innerHTML = "<h1 style='color:white;'>Please wait loading...</h1>";
             entbtn.style.width = "50%";
-            entbtn.style.color = "white"
+            entbtn.style.color = "white";
         }
 
         function retails() {
