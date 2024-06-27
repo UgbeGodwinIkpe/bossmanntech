@@ -226,7 +226,7 @@ button {
     30% {
         width: 100%;
         float: left;
-        background: conic-gradient(gold 45deg, navy 90deg, #241571 210deg);
+        background: conic-gradient(gold 45deg, primary 90deg, primary 210deg);
         /* url(../images/computer-img.png), rgba(6, 2, 35, 0.37); */
         /* url(../images/banner-bg.png); */
         background-position: center;
