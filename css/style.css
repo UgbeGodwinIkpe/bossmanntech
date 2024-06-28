@@ -212,32 +212,27 @@ button {
 /* banner bg main start */
 
 @keyframes banner {
-    0% {
+    /* 0% {
         width: 100%;
         float: left;
         background: url(../images/computer-img.png), rgba(10, 2, 68, 0.37);
-        /* conic-gradient(navy 45deg, #241571 90deg, gold 300deg); */
-        /* url(../images/banner-bg.png); */
         background-position: center;
         height: auto;
         background-size: 100%;
         background-repeat: no-repeat;
-    }
-    30% {
+    } */
+    /* 40% {
         width: 100%;
         float: left;
         background: conic-gradient(gold 45deg, primary 90deg, primary 210deg);
-        /* url(../images/computer-img.png), rgba(6, 2, 35, 0.37); */
-        /* url(../images/banner-bg.png); */
         background-position: center;
         height: auto;
-        /* background-size: 100%; */
         background-repeat: repeat;
-    }
-    60% {
+    } */
+    50% {
         width: 100%;
         float: left;
-        background: url(../images/laptop-img.png), rgba(10, 2, 68, 0.37);
+        background: url(../images/laptop-img.png), #062a71;
         /* conic-gradient(navy 45deg, gold 90deg, #241571 210deg); */
         /* url(../images/banner-bg.png); */
         background-position: center;
@@ -250,7 +245,7 @@ button {
 .banner_bg_main {
     width: 100%;
     float: left;
-    background: url(../images/laptop-img.png), rgba(10, 2, 68, 0.37);
+    background: url(../images/laptop-img.png), #062a71;
     /* linear-gradient(150deg, navy 50%, #241571 40%, gold); */
     /* url(../images/banner-bg.png); */
     /* opacity: 0.5; */
@@ -258,7 +253,7 @@ button {
     height: auto;
     /* background-size: 100%; */
     background-repeat: repeat;
-    animation: banner 4s infinite alternate ease-in;
+    animation: banner 15s infinite alternate ease-in;
 }
 
 #sec a {
@@ -282,7 +277,7 @@ button {
 .header_section_top {
     width: 100%;
     float: left;
-    background-color: #2b2a29;
+    background-color: #062a71;
     clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
     height: auto;
     padding: 10px 0px;
@@ -358,7 +353,7 @@ button {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #062a71;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
