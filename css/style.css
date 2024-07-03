@@ -322,17 +322,17 @@ button {
 }
 
 .logo {
-    width: 100%;
+    width: 100px;
     float: left;
     text-align: center;
     padding: 30px 0px;
 }
 
 .logo a img {
-    width: 250px !important;
-    height: auto;
+    width: 60px !important;
+    height: 50px;
     position: absolute;
-    top: 2px;
+    top: 0;
     right: 40px;
 }
 
