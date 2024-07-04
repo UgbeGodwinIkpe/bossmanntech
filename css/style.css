@@ -873,7 +873,7 @@ a:hover {
 .footer_section {
     width: 100%;
     float: left;
-    background-color: #007bff;
+    background-color: #062a71;
     height: auto;
 }
 
@@ -993,7 +993,8 @@ input.mail_bt::placeholder {
 .copyright_section {
     width: 100%;
     float: left;
-    background-color: #007bff;
+    background-color: #062a71;
+    /* #007bff */
     height: auto;
 }
 
