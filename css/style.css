@@ -902,6 +902,10 @@ a:hover {
     border-bottom: 1px solid #ffffff !important;
 }
 
+.mail_bt option {
+    color: #000 !important;
+}
+
 input.mail_bt::placeholder {
     color: #fff;
 }
