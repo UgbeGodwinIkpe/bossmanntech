@@ -94,7 +94,7 @@ require_once "includes/header.php"
                                             <td>
                                                 <?php echo $row['paymentStatus']?>
                                             </td>
-                                            <td><a class="btn btn-primary">More Detail</a><b class="btn btn-danger">Delete</a></td>
+                                            <td><a href="details.php?productId=<?php echo $row['productId']?>" class="btn btn-primary">More Detail</a><b class="btn btn-danger">Delete</a></td>
                                         </tr>
                                     <?php
                                     // $counter++;

@@ -1,29 +1,32 @@
 <?php
-require_once 'admin/controllers/db.php';
-require_once 'admin/controllers/functions.php';
+require_once 'controllers/db.php';
+require_once 'controllers/functions.php';
     $counter=1;
     if(isset($_GET['productId'])){
         $productId=$_GET['productId'];
         // echo $productId;
         // query products
-        $queryProd = "SELECT * FROM products WHERE id ='$productId'";
+
+        $queryProd = "SELECT * FROM orders WHERE productId ='$productId' INNER JOIN products WHERE id='$productId'";
         $checkProducts = mysqli_query($link, $queryProd);
         $row = mysqli_fetch_assoc($checkProducts);
+        var_dump($row);
+        die();
     }
 
 require_once "includes/header.php";
 ?>
-      </div>
-      <!-- banner bg main end -->
       <!-- electronic section start -->
       <div class="fashion_section">
          <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner"><br>
-            <h1 class="fashion_taital"><?php echo $row['product_name']?></h1>
+            <div class="carousel-inner">
+            <h1 class="fashion_taital"><?php echo $row['customer'].' made an order for '.$row['quantity'].' '.$row['productName'].' on '.$row['orderDate']?></h1>
                 <center>
-                    <h4 class="fashion_taital" style="color:#f26522;"><del>N</del> <?php echo $row['product_amount']?></h4>
-                    <p class="price_text">Details: <span style="color: #262626;"><?php echo $row['product_desc']?></span></p>
-                    <div class="buy_bt"><a href="checkout.php?productId=<?php echo $row['id']?>"><h1 class="fashion_taital" style="color:#f26522;">Buy Now</h1></a></div>
+                    <h4 class="fashion_taital" style="color:#f26522;">Amount:<del>N</del> <?php echo $row['amount'].''.$row['paymentStauts']?></h4>
+                    <p class="price_text">Customer Email: <span style="color: #262626;"><?php echo $row['email']?></span></p>
+                    <p class="price_text">Contact Number: <span style="color: #262626;"><?php echo $row['customerPhoneNumber']?></span></p>
+                    <p class="price_text">Address: <span style="color: #262626;"><?php echo $row['address']?></span></p>
+                    <!--  <div class="buy_bt"><a href="#"><h1 class="fashion_taital" style="color:#f26522;">Buy Now</h1></a></div> -->
                     <!-- <p class="price_text">Price  <span style="color: #262626;"><del>N</del> <?php echo $row['product_amount']?></span></p> -->
                     <div class="container row">
                             <div class="col-lg-4 col-sm-4">
@@ -42,7 +45,7 @@ require_once "includes/header.php";
                     <p>Continue to order this product by clicking the Boy Now button bellow</p>
                     <div class="btn_main">
                         <div class="buy_bt"><a href="retails.php">Go Back</a></div>
-                            <div class="buy_bt"><a href="checkout.php?productId=<?php echo $row['id']?>">Buy Now</a></div>
+                            <div class="buy_bt"><a href="#">Buy Now</a></div>
                     </div>
                 </center>
             </div>

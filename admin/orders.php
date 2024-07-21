@@ -18,6 +18,7 @@ require_once "includes/header.php"
                                     <th scope="col">Product</th>
                                     <th scope="col">Customer Name</th>
                                     <th scope="col">Customer Phone</th>
+                                    <th scope="col">Quantity</th>
                                     <th scope="col">Amount</th>
                                     <th scope="col">Payment Status</th>
                                     <th scope="col">Action</th>
@@ -41,11 +42,14 @@ require_once "includes/header.php"
                                             <td>
                                                 <?php echo $row['productName']?>
                                             </td>
-                                            <td><del>N</del>
+                                            <td>
                                                 <?php echo $row['customer']?>
                                             </td>
-                                            <td><del>N</del>
+                                            <td>
                                                 <?php echo $row['customerPhoneNumber']?>
+                                            </td>
+                                            <td>
+                                                <?php echo $row['quantity']?>
                                             </td>
                                             <td><del>N</del>
                                                 <?php echo $row['amount']?>
@@ -53,7 +57,7 @@ require_once "includes/header.php"
                                             <td>
                                                 <?php echo $row['paymentStatus']?>
                                             </td>
-                                            <td><a class="btn btn-primary">More Detail</a><b class="btn btn-danger">Delete</a></td>
+                                            <td><a href="details.php?productId=<?php echo $row['id']?>" class="btn btn-primary">More Detail</a><b class="btn btn-danger">Delete</a></td>
                                         </tr>
                                     <?php
                                     $counter++;

@@ -47,8 +47,8 @@ require_once "includes/header.php";
                                     <p class="price_text">Price  <span style="color: #262626;"><del>N</del> <?php echo $row['product_amount']?></span></p>
                                     <div class="electronic_img"><img src="admin/<?php echo $row['front_image']?>"></div>
                                     <div class="btn_main">
-                                       <div class="buy_bt"><a href="#">Buy Now</a></div>
-                                       <div class="seemore_bt"><a href="details.php?productId=<?php echo $row['id']?>">More Details</a></div>
+                                       <div class="buy_bt"><a href="checkout.php?productId=<?php echo $row['id']?>" class="btn btn-primary">Buy Now</a></div>
+                                       <div class="seemore_bt"><a href="details.php?productId=<?php echo $row['id']?>" class="btn btn-secondary">More Details</a></div>
                                     </div>
                                  </div>
                               </div>
@@ -65,8 +65,14 @@ require_once "includes/header.php";
             <i class="fa fa-angle-right"></i>
             </a> -->
          </div>
+         <button id="cbtn">Click</button>
       </div>
       <!-- electronic section end -->
+      <script>
+         const cardCheckout = document.getElementById('cbtn');
+         // const shopPay = document.getElementById('shopPay');
+         cardCheckout.addEventListener("click", function(){console.log("I am here")});
+      </script>
       <?php
       require_once "includes/footer.php";
       ?>
